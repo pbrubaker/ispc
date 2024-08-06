@@ -590,7 +590,7 @@ if (APPLE AND CMAKE_SYSTEM_VERSION VERSION_GREATER_EQUAL 13)
     # just built libcxxabi, which was not built).  An option to build seems to be
     # a better one.
     set(LLVM_RUNTIMES
-        ${LLVM_RUNTIMES}$<SEMICOLON>libcxx$<SEMICOLON>libcxxabi
+        ${LLVM_RUNTIMES}$<SEMICOLON>libcxx$<SEMICOLON>libcxxabi$<SEMICOLON>libunwind
         )
 endif()
 
