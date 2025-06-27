@@ -68,7 +68,7 @@ option(INSTALL_ISPC "Enable installation of ISPC to CMAKE_INSTALL_PREFIX" OFF)
 option(INSTALL_WITH_XE_DEPS "Enable installation ISPC or stage2 toolchain with XE_DEPS to CMAKE_INSTALL_PREFIX" OFF)
 option(XE_DEPS "Enable build of all XE dependencies (L0 loader, vc-intrinsics, SPIRV-LLVM-Translator" ON)
 option(MACOS_UNIVERSAL_BIN "Enable build of universal binaries for macOS" ON)
-option(FETCH_CONTENT_QUIET "Enable quiet mode for FetchContent" ON)
+option(FETCH_CONTENT_QUIET "Enable quiet mode for FetchContent" OFF)
 
 if(FETCH_CONTENT_QUIET)
     set(FETCH_CONTENT_QUIET_OPTION "QUIET")
